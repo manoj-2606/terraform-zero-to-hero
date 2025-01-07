@@ -1,8 +1,6 @@
 vmname="myVM"
 username="azureuser"
 az vm create \
-    --resource-group $resourcegroup \
-    --name $vmname \
-    --image Win2022AzureEditionCore \
-    --public-ip-sku Standard \
+    --resource-group $az-demo \
+    --name $myVM \
     --admin-username $username
