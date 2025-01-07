@@ -1,6 +1,8 @@
 vmname="myVM"
 username="azureuser"
+resource_group="az-demo"
+
 az vm create \
-    --resource-group $az-demo \
-    --name $myVM \
+    --resource-group $resource_group \
+    --name $vmname \
     --admin-username $username
